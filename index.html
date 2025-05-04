@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="coffee.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafenod - Premium Coffee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <style>
+        /* ====== Global Styles ====== */
+    
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">CAFENOD</a>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#menu">SHOP</a></li>
+                    <li><a href="#pages">PAGES</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+                <div class="cart-icon" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>TIME TO DISCOVER COFFEE HOUSE</h1>
+                <p>The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. given an opportunity to sample.</p>
+                <a href="#menu" class="btn">LEARN MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>TESTY COFFEE</h2>
+                <p>Discover our premium selection of coffee blends from around the world, carefully roasted to perfection.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Coffee Story</h3>
+                    <p>At Cafenod, we source only the finest coffee beans from sustainable farms across the globe. Our master roasters carefully craft each batch to bring out the unique flavors and aromas.</p>
+                    <p>Every cup tells a story - from the high-altitude plantations of Colombia to the volcanic soils of Ethiopia. We're passionate about delivering an exceptional coffee experience that delights all your senses.</p>
+                    <a href="#menu" class="btn">EXPLORE MENU</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Coffee beans">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>OUR MENU</h2>
+                <p>Explore our delicious coffee selections and treats that will satisfy your cravings.</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Espresso">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Espresso</h3>
+                            <span>$3.50</span>
+                        </div>
+                        <p>Strong black coffee made by forcing steam through ground coffee beans.</p>
+                        <div class="menu-item-actions">
+                            <button class="add-to-cart" data-id="1" data-name="Espresso" data-price="3.50" data-image="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">Add to Cart</button>
+                            <div class="item-quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="text" class="quantity-input" value="1" readonly>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cappuccino">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Cappuccino</h3>
+                            <span>$4.50</span>
+                        </div>
+                        <p>Espresso with steamed milk foam, traditionally prepared with microfoam.</p>
+                        <div class="menu-item-actions">
+                            <button class="add-to-cart" data-id="2" data-name="Cappuccino" data-price="4.50" data-image="https://images.unsplash.com/photo-1534778101976-62847782c213?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">Add to Cart</button>
+                            <div class="item-quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="text" class="quantity-input" value="1" readonly>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Latte">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Latte</h3>
+                            <span>$4.00</span>
+                        </div>
+                        <p>Espresso with a lot of steamed milk and a small amount of foam.</p>
+                        <div class="menu-item-actions">
+                            <button class="add-to-cart" data-id="3" data-name="Latte" data-price="4.00" data-image="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">Add to Cart</button>
+                            <div class="item-quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="text" class="quantity-input" value="1" readonly>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Americano">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Americano</h3>
+                            <span>$3.75</span>
+                        </div>
+                        <p>Espresso shots topped with hot water to produce a light layer of crema.</p>
+                        <div class="menu-item-actions">
+                            <button class="add-to-cart" data-id="4" data-name="Americano" data-price="3.75" data-image="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">Add to Cart</button>
+                            <div class="item-quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="text" class="quantity-input" value="1" readonly>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1568649929103-28ffbefaca1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mocha">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Mocha</h3>
+                            <span>$4.75</span>
+                        </div>
+                        <p>Espresso with steamed milk and chocolate, topped with whipped cream.</p>
+                        <div class="menu-item-actions">
+                            <button class="add-to-cart" data-id="5" data-name="Mocha" data-price="4.75" data-image="https://images.unsplash.com/photo-1568649929103-28ffbefaca1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">Add to Cart</button>
+                            <div class="item-quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="text" class="quantity-input" value="1" readonly>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Flat White">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Flat White</h3>
+                            <span>$4.25</span>
+                        </div>
+                        <p>Espresso with microfoam (steamed milk with small, fine bubbles).</p>
+                        <div class="menu-item-actions">
+                            <button class="add-to-cart" data-id="6" data-name="Flat White" data-price="4.25" data-image="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">Add to Cart</button>
+                            <div class="item-quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="text" class="quantity-input" value="1" readonly>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Macchiato">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Macchiato</h3>
+                            <span>$3.75</span>
+                        </div>
+                        <p>Espresso with a small amount of steamed milk and foam.</p>
+                        <div class="menu-item-actions">
+                            <button class="add-to-cart" data-id="7" data-name="Macchiato" data-price="3.75" data-image="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">Add to Cart</button>
+                            <div class="item-quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="text" class="quantity-input" value="1" readonly>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cold Brew">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Cold Brew</h3>
+                            <span>$4.50</span>
+                        </div>
+                        <p>Cold brewed coffee served over ice for a smooth, refreshing taste.</p>
+                        <div class="menu-item-actions">
+                            <button class="add-to-cart" data-id="8" data-name="Cold Brew" data-price="4.50" data-image="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">Add to Cart</button>
+                            <div class="item-quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="text" class="quantity-input" value="1" readonly>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pages Section -->
+    <section class="pages" id="pages">
+        <div class="container">
+            <div class="section-title">
+                <h2>OUR PAGES</h2>
+                <p>Explore more about Cafenod through our special pages.</p>
+            </div>
+            <div class="pages-grid">
+                <div class="page-card">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Our Story">
+                    <div class="page-card-content">
+                        <h3>Our Story</h3>
+                        <p>Learn about our journey from a small coffee stand to a beloved local coffeehouse.</p>
+                        <a href="#" class="btn">READ MORE</a>
+                    </div>
+                </div>
+                <div class="page-card">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Coffee Process">
+                    <div class="page-card-content">
+                        <h3>Coffee Process</h3>
+                        <p>Discover how we source, roast, and brew our coffee to perfection.</p>
+                        <a href="#" class="btn">READ MORE</a>
+                    </div>
+                </div>
+                <div class="page-card">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Events">
+                    <div class="page-card-content">
+                        <h3>Events</h3>
+                        <p>Join our coffee tasting events and barista workshops.</p>
+                        <a href="#" class="btn">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-title">
+                <h2>LATEST BLOGS</h2>
+                <p>Read our latest articles about coffee culture and brewing tips.</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-post">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Coffee Brewing">
+                    <div class="blog-post-content">
+                        <p class="blog-post-date">June 15, 2023</p>
+                        <h3>The Art of Pour Over Coffee</h3>
+                        <p>Learn how to master the pour over technique for a perfect cup every time with our step-by-step guide.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-post">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Coffee Beans">
+                    <div class="blog-post-content">
+                        <p class="blog-post-date">May 28, 2023</p>
+                        <h3>Understanding Coffee Bean Varieties</h3>
+                        <p>Explore the differences between Arabica and Robusta beans and how they affect your coffee experience.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-post">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Coffee Shop">
+                    <div class="blog-post-content">
+                        <p class="blog-post-date">May 10, 2023</p>
+                        <h3>Creating the Perfect Coffee Shop Ambiance</h3>
+                        <p>Discover how we design our spaces to create the ideal environment for enjoying your coffee.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>CONTACT US</h2>
+                <p>We'd love to hear from you. Visit us or send us a message.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Have questions about our coffee or want to book an event? Reach out to us through any of these channels.</p>
+                    <div class="contact-details">
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Coffee Street, Brew City</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone"></i>
+                            <span>(123) 456-7890</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@cafenod.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CAFENOD</h3>
+                    <p>Premium coffee shop offering the finest selections from around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#pages">Pages</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 7am - 9pm</li>
+                        <li>Saturday: 8am - 10pm</li>
+                        <li>Sunday: 8am - 8pm</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Mohamed Ashour. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be added here dynamically -->
+            <div class="empty-cart">
+                <p>Your cart is empty</p>
+                <i class="fas fa-coffee" style="font-size: 40px; margin-top: 10px;"></i>
+            </div>
+        </div>
+        <div class="cart-total" id="cart-total" style="display: none;">
+            <h4>Total: <span id="cart-total-amount">$0.00</span></h4>
+            <button class="checkout-btn">PROCEED TO CHECKOUT</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="coffee.js"> </script>
+</body>
+</html>
